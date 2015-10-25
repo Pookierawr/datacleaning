@@ -1,0 +1,87 @@
+---
+title: "Codebook"
+author: "L Katz"
+date: "October 23, 2015"
+output: html_document
+---
+
+### Summary
+This file is a description of all columns found in the output file of the tidy data set.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.  
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).  
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+### Columns
+#### ALL VALUES PRESENTED IN THE TABLE ARE THE AVERAGES OF THE COLUMN FOR A GIVEN SUBJECT/ACTIVITY.
+#### For example, row 1 column 4 would be the average of tBodyAcc.mean...X for subject 1 while laying. Row 2 column 4 would be the average of tBodyAcc.mean...Y for subject 1 while laying, so on and so forth.
+1. Subject - The # subject that performed the observation
+2. Activity - The description of the activity performed
+3. ActivityNum - The number of the activity performed
+4. tBodyAcc.mean...X - The mean body acceleration in the X direction in the time domain.
+5. tBodyAcc.mean...Y - The mean body acceleration in the Y direction in the time domain.
+6. tBodyAcc.mean...Z - The mean body acceleration in the Z direction in the time domain.
+7. tGravityAcc.mean...X - The mean gravitation acceleration in the X direction in the time domain.
+8. tGravityAcc.mean...Y - The mean gravitation acceleration in the Y direction in the time domain.
+9. tGravityAcc.mean...Z - The mean gravitation acceleration in the Z direction in the time domain.
+10. tBodyAccJerk.mean...X - The mean of the jerk caused by body acceleration in the X direction in the time domain.
+11. tBodyAccJerk.mean...Y - The mean of the jerk caused by body acceleration in the Y direction in the time domain.
+12. tBodyAccJerk.mean...Z - The mean of the jerk caused by body acceleration in the Z direction in the time domain.
+13. tBodyGyro.mean...X - The mean of the gyroscopic measurement in the X direction in the time domain.
+14. tBodyGyro.mean...Y - The mean of the gyroscopic measurement in the Y direction in the time domain.
+15. tBodyGyro.mean...Z - The mean of the gyroscopic measurement in the Z direction in the time domain.
+16. tBodyGyroJerk.mean...X - The mean of the jerk caused by gyroscopic movement in the X direction in the time domain. 
+17. tBodyGyroJerk.mean...Y - The mean of the jerk caused by gyroscopic movement in the Y direction in the time domain.
+18. tBodyGyroJerk.mean...Z - The mean of the jerk caused by gyroscopic movement in the Z direction in the time domain.
+19. tBodyAccMag.mean.. - The mean of the magnitude of the body acceleration in the time domain.
+20. tGravityAccMag.mean.. - The mean of the magnitude of the gravitation acceleration in the time domain.
+21. tBodyAccJerkMag.mean.. - The mean of the magnitude of the body acceleration jerk in the time domain.
+22. tBodyGyroMag.mean.. - The mean of the magnitude of the gyroscopic measurement in the time domain.
+23. tBodyGyroJerkMag.mean.. - The mean of the magnitude of the gyroscopic jerk in the time domain.
+24. fBodyAcc.mean...X - The mean body acceleration in the X direction in the frequency domain.
+25. fBodyAcc.mean...Y - The mean body acceleration in the Y direction in the frequency domain.
+26. fBodyAcc.mean...Z - The mean body acceleration in the Z direction in the frequency domain.
+27. fBodyAccJerk.mean...X - The mean of the jerk caused by body acceleration in the X direction in the frequency domain.
+28. fBodyAccJerk.mean...Y - The mean of the jerk caused by body acceleration in the Y direction in the frequency domain.
+29. fBodyAccJerk.mean...Z - The mean of the jerk caused by body acceleration in the Z direction in the frequency domain.
+30. fBodyGyro.mean...X - The mean of the gyroscopic measurement in the X direction in the frequency domain.
+31. fBodyGyro.mean...Y - The mean of the gyroscopic measurement in the Y direction in the frequency domain.
+32. fBodyGyro.mean...Z - The mean of the gyroscopic measurement in the Z direction in the frequency domain.
+33. fBodyAccMag.mean.. - The mean of the magnitude of the body acceleration in the freqency domain.
+34. fBodyBodyAccJerkMag.mean.. - The mean of the magnitude of the body acceleration jerk in the frequency domain.
+35. fBodyBodyGyroMag.mean.. - The mean of the magnitude of the gyroscopic measurement in the frequency domain.
+36. fBodyBodyGyroJerkMag.mean.. - The mean of the magnitude of the gyroscopic jerk in the frequency domain.
+37. tBodyAcc.std...X - The standard deviation body acceleration in the X direction in the time domain.
+38. tBodyAcc.std...Y - The standard deviation body acceleration in the Y direction in the time domain.
+39. tBodyAcc.std...Z - The standard deviation body acceleration in the Z direction in the time domain.
+40. tGravityAcc.std...X - The standard deviation gravitation acceleration in the X direction in the time domain.
+41. tGravityAcc.std...Y - The standard deviation gravitation acceleration in the Y direction in the time domain.
+42. tGravityAcc.std...Z - The standard deviation gravitation acceleration in the Z direction in the time domain.
+43. tBodyAccJerk.std...X - The standard deviation of the jerk caused by body acceleration in the X direction in the time domain.
+44. tBodyAccJerk.std...Y - The standard deviation of the jerk caused by body acceleration in the Y direction in the time domain.
+45. tBodyAccJerk.std...Z - The standard deviation of the jerk caused by body acceleration in the Z direction in the time domain.
+46. tBodyGyro.std...X - The standard deviation of the gyroscopic measurement in the X direction in the time domain.
+47. tBodyGyro.std...Y - The standard deviation of the gyroscopic measurement in the Y direction in the time domain.
+48. tBodyGyro.std...Z - The standard deviation of the gyroscopic measurement in the Z direction in the time domain.
+49. tBodyGyroJerk.std...X - The standard deviation of the jerk caused by gyroscopic movement in the X direction in the time domain. 
+50. tBodyGyroJerk.std...Y - The standard deviation of the jerk caused by gyroscopic movement in the Y direction in the time domain.
+51. tBodyGyroJerk.std...Z - The standard deviation of the jerk caused by gyroscopic movement in the Z direction in the time domain.
+52. tBodyAccMag.std.. - The standard deviation of the magnitude of the body acceleration in the time domain.
+53. tGravityAccMag.std.. - The standard deviation of the magnitude of the gravitation acceleration in the time domain.
+54. tBodyAccJerkMag.std.. - The standard deviation of the magnitude of the body acceleration jerk in the time domain.
+55. tBodyGyroMag.std.. - The standard deviation of the magnitude of the gyroscopic measurement in the time domain.
+56. tBodyGyroJerkMag.std.. - The standard deviation of the magnitude of the gyroscopic jerk in the time domain.
+57. fBodyAcc.std...X - The standard deviation body acceleration in the X direction in the frequency domain.
+58. fBodyAcc.std...Y - The standard deviation body acceleration in the Y direction in the frequency domain.
+59. fBodyAcc.std...Z - The standard deviation body acceleration in the Z direction in the frequency domain.
+60. fBodyAccJerk.std...X - The standard deviation of the jerk caused by body acceleration in the X direction in the frequency domain.
+61. fBodyAccJerk.std...Y - The standard deviation of the jerk caused by body acceleration in the Y direction in the frequency domain.
+62. fBodyAccJerk.std...Z - The standard deviation of the jerk caused by body acceleration in the Z direction in the frequency domain.
+63. fBodyGyro.std...X - The standard deviation of the gyroscopic measurement in the X direction in the frequency domain.
+64. fBodyGyro.std...Y - The standard deviation of the gyroscopic measurement in the Y direction in the frequency domain.
+65. fBodyGyro.std...Z - The standard deviation of the gyroscopic measurement in the Z direction in the frequency domain.
+66. fBodyAccMag.std.. - The standard deviation of the magnitude of the body acceleration in the freqency domain.
+67. fBodyBodyAccJerkMag.std.. - The standard deviation of the magnitude of the body acceleration jerk in the frequency domain.
+68. fBodyBodyGyroMag.std.. - The standard deviation of the magnitude of the gyroscopic measurement in the frequency domain.
+69. fBodyBodyGyroJerkMag.std.. - The standard deviation of the magnitude of the gyroscopic jerk in the frequency domain.
+
+

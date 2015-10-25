@@ -1,0 +1,35 @@
+---
+title: "runanalysis"
+author: "L Katz"
+date: "October 23, 2015"
+output: html_document
+---
+
+##Summary
+
+This document explains the general script and set-up to get it to work. The only setup required is to download the data, put it in the working directory and name it "Dataset". In addition, the execution of the script requires the plyr and dplyr libraries.  
+From there the the script should pull in all required files from the "Dataset" folder and output a file called "Finaltable.txt" in the working directory. This will contain the required tidy dataset output.  
+
+## General Script Description
+
+While the script is commented, the following is a slightly more thorough description of the steps the script performs.
+
+* First, the appropriate libraries are selected. In this case, we use the plyr and dplyr libraries in addition to the standard library.
+* Next, all the relevant files are read in from the data set. This includes:
+    + Features - the full list of measurements taken in the dataset  
+    + Activitylabels - the list of the activity labels (Walking, Standing etc) and their corresponding activity numbers used in the dataset  
+    + Xtest - the list of all measurements taken for the "test" group, with one observation per row  
+    + Subjecttest - the list of which subject performed the action for each row in the test set  
+    + Ytest - the list of the activity performed for each observation in the test set  
+    + Xtrain - the list of all measurements taken for the "train" group, with one observation per row  
+    + Subjecttrain - the list of which subject performed the action for each row in the train set  
+    + Ytest - the list of the activity performed for each observation in the train set  
+* After all tables were read in, the appropriate column names were applied to each table. For the Xtest/train, this were taken from the features table. For the others, these were manually added.  
+* Next, the tables were column bound within each dataset (test/train) so that each observation had an appropriate subject and activity.
+* Then, the tables were rowbound together so that the full dataset contained both test and train group.
+* It was then discovered that due to the labeling of a portion of the data, duplicates existed in the "energyband" measurements. This were removed so that the data could be properly manipulated.
+* The columns are then filtered so that only the Subject/Activity and Mean/Std measurements are kept as per the instructions.
+* Once properly selected, the filtered table is merged with the activity labels table so that each observation now had a descriptive activity name rather than just a number.
+* The columns were then renamed for clarity.
+* The table was then summarized by activity/subject to make a tidy data set. This also took the mean of each measured column.
+* Finally the table is written to a txt file for submission.
