@@ -1,5 +1,5 @@
 ---
-title: "runanalysis"
+title: "README"
 author: "L Katz"
 date: "October 23, 2015"
 output: html_document
