@@ -13,7 +13,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 ### Columns
 #### ALL VALUES PRESENTED IN THE TABLE ARE THE AVERAGES OF THE COLUMN FOR A GIVEN SUBJECT/ACTIVITY.
-#### For example, row 1 column 4 would be the average of tBodyAcc.mean...X for subject 1 while laying. Row 2 column 4 would be the average of tBodyAcc.mean...Y for subject 1 while laying, so on and so forth.
+#### For example, row 1 column 4 would be the average of tBodyAcc.mean...X for subject 1 while laying. Row 1 column 5 would be the average of tBodyAcc.mean...Y for subject 1 while laying, so on and so forth.
 1. Subject - The # subject that performed the observation
 2. Activity - The description of the activity performed
 3. ActivityNum - The number of the activity performed
